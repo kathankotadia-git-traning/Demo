@@ -36,6 +36,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.6.0
+        with:
+        # Artifact name
+        name: test-build
+        # A file, directory or wildcard pattern that describes what to upload
+        path: ${{github.workspace}}
           
   test:
     needs: build
