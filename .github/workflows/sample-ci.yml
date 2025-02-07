@@ -80,3 +80,11 @@ jobs:
       - name: Run On windows
         run: echo deploy!
       
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+    # Name of the artifact to download. If unspecified, all artifacts for the run are downloaded.
+          name: test-build
+    # Destination path. Supports basic tilde expansion. Defaults to $GITHUB_WORKSPACE
+          path: ${{github.workspace}}
+      
