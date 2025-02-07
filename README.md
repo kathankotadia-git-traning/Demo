@@ -5,4 +5,6 @@ Demo Repo for github Workshop
 
 # Feature added
 
+
 # Conflict
+# Edited for conflict
